@@ -1,18 +1,17 @@
 #include <Arduino.h>
+#include "imu.h"
 
-// put function declarations here:
-int myFunction(int, int);
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+IMU mpu;
+
+void setup() 
+{
+    /*** Init IMU as input device ***/
+    // lv_port_indev_init();
+    // mpu.init();
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
+void loop() 
+{
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
